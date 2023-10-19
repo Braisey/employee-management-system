@@ -1,0 +1,28 @@
+.small-button {
+    display: inline-block; /* Display buttons in one line */
+    margin: 0; /* Remove default margin */
+    padding: 5px 10px; /* Add padding for spacing */
+    font-size: 14px;
+    border: none; /* Remove border */
+    background: none; /* Remove background color */
+}
+
+.small-button .button-text {
+    transition: opacity 0.3s;
+}
+
+.small-button .icon-only {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.small-button:hover .button-text {
+    opacity: 0;
+}
+
+.small-button:hover .icon-only {
+    opacity: 1;
+}
